@@ -44,7 +44,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  background: #000;
+  background: #17171700;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -87,7 +87,7 @@ section {
 }
 
 .btn:hover {
-  color: #000;
+  color: #171717;
   background: #fff;
 }
 
@@ -97,7 +97,7 @@ section {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: #000;
+  background: #171717;
   padding: 3rem 9%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,7 +166,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #000;
+  background: #171717;
   position: absolute;
   top: 99%;
   left: 0;
@@ -241,7 +241,7 @@ section {
   width: 7rem;
   line-height: 7rem;
   font-size: 2.5rem;
-  color: #000;
+  color: #171717;
   background: #eacf4f;
   margin-bottom: 1rem;
   border-radius: 50%;
@@ -509,6 +509,138 @@ section {
   gap: 3rem;
 }
 
+.btn-links {
+  border-radius: 30px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #181a1b;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+  height: 50px;
+  width: 200px;
+  margin-bottom: 2rem;
+}
+
+.btn-links::before,
+.btn-links::after {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  transition: 0.25s linear;
+  z-index: 1;
+}
+
+.btn-links::before {
+  content: "";
+  left: 0;
+  justify-content: flex-end;
+  background-color: #181a1b;
+}
+
+.btn-links::after {
+  content: "";
+  right: 0;
+  justify-content: flex-start;
+  background-color: #eacf4f;
+}
+
+.btn-links:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.btn-links:hover span {
+  opacity: 0;
+  z-index: -3;
+}
+
+.btn-links:hover::before {
+  opacity: 0.5;
+  transform: translateY(-100%);
+}
+
+.btn-links:hover::after {
+  opacity: 0.5;
+  transform: translateY(100%);
+}
+
+.btn-links span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: whitesmoke;
+  font-family: "Fira Mono", monospace;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+}
+
+.btn-links .social-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 100%;
+  color: rgba(245, 245, 245, 0.192);
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.btn-links .social-link a {
+  text-shadow: 1px 1px #eacf4f;
+  transform: scale(1);
+}
+
+.btn-links .social-link:hover {
+  animation: bounce_613 0.4s linear;
+}
+
+.fa-facebook-f:hover {
+  color: #eacf4f;
+}
+
+.fa-twitter:hover {
+  color: #eacf4f;
+}
+
+.fa-instagram:hover {
+  color: #c32aa3;
+}
+
+.fa-linkedin-in:hover {
+  color: #eacf4f;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .contact .row .map {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
@@ -545,7 +677,7 @@ section {
   line-height: 6rem;
   border-radius: 50%;
   background: #eacf4f;
-  color: #000;
+  color: #171717;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -626,7 +758,7 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2rem;
-  background: #000;
+  background: #171717;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -677,8 +809,8 @@ section {
 
 .footer {
   text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000));
-  background: linear-gradient(transparent, #000);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#171717));
+  background: linear-gradient(transparent, #171717);
 }
 
 .footer .links a {
@@ -728,7 +860,7 @@ section {
     top: 99%;
     left: 0;
     right: 0;
-    background: #000;
+    background: #171717;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
