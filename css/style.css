@@ -32,13 +32,12 @@ html {
   }
 }
 
-
 html::-webkit-scrollbar {
   width: 1rem;
 }
 
 html::-webkit-scrollbar-track {
-  background: #171717b4;
+  background:#171717;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -81,7 +80,7 @@ section {
 }
 
 .btn:hover {
-  color: #171717b4;
+  color:#171717;
   background: #fff;
 }
 
@@ -91,7 +90,7 @@ section {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: #171717b4;
+  background:#171717;
   padding: 3rem 9%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,7 +159,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background:#171717b4
+  background:#171717;
   position: absolute;
   top: 99%;
   left: 0;
@@ -235,7 +234,7 @@ section {
   width: 7rem;
   line-height: 7rem;
   font-size: 2.5rem;
-  color: #171717b4
+  color:#171717;
   background: #eacf4f;
   margin-bottom: 1rem;
   border-radius: 50%;
@@ -494,15 +493,6 @@ section {
   color: #eacf4f;
 }
 
-.contact .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 3rem;
-}
-
 .btn-links {
   border-radius: 30px;
   margin: auto;
@@ -593,7 +583,7 @@ section {
 }
 
 .btn-links .social-link a {
-  text-shadow: 1px 1px #eacf4f;
+  text-shadow: 1px 1px rgba(31, 74, 121, 0.7);
   transform: scale(1);
 }
 
@@ -602,11 +592,11 @@ section {
 }
 
 .fa-facebook-f:hover {
-  color: #eacf4f;
+  color: #1b74e4;
 }
 
 .fa-twitter:hover {
-  color: #eacf4f;
+  color: #1da1f2;
 }
 
 .fa-instagram:hover {
@@ -614,7 +604,7 @@ section {
 }
 
 .fa-linkedin-in:hover {
-  color: #eacf4f;
+  color: #0a66c2;
 }
 
 @keyframes bounce_613 {
@@ -633,84 +623,6 @@ section {
   100% {
     transform: scale(1);
   }
-}
-
-.contact .row .map {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
-  width: 100%;
-}
-
-.contact .row .form {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
-}
-
-.contact .row .form .icons-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-.contact .row .form .icons-container .icons {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 17rem;
-          flex: 1 1 17rem;
-  text-align: center;
-}
-
-.contact .row .form .icons-container .icons i {
-  height: 6rem;
-  width: 6rem;
-  line-height: 6rem;
-  border-radius: 50%;
-  background: #eacf4f;
-  color:#171717b4;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.contact .row .form .icons-container .icons h3 {
-  padding: 1rem 0;
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.contact .row .form .icons-container .icons p {
-  font-size: 1.5rem;
-  line-height: 2;
-  color: #aaa;
-}
-
-.contact .row .form form {
-  text-align: center;
-}
-
-.contact .row .form form .box {
-  padding: 1.2rem 1.4rem;
-  font-size: 1.6rem;
-  color: #fff;
-  background: none;
-  border: 0.2rem solid rgba(255, 255, 255, 0.3);
-  text-transform: none;
-  width: 100%;
-  margin: .7rem 0;
-}
-
-.contact .row .form form .box:focus {
-  border-color: #eacf4f;
-}
-
-.contact .row .form form textarea {
-  height: 15rem;
-  resize: none;
 }
 
 .blogs .box-container {
@@ -752,7 +664,7 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2rem;
-  background: #171717b4;
+  background:#171717;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -803,8 +715,8 @@ section {
 
 .footer {
   text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#171717b4));
-  background: linear-gradient(transparent, #171717b4);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#171717));
+  background: linear-gradient(transparent,#171717);
 }
 
 .footer .links a {
@@ -854,7 +766,7 @@ section {
     top: 99%;
     left: 0;
     right: 0;
-    background:#171717b4;
+    background:#171717;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
